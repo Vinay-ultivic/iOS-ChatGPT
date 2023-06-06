@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		109850C5F006305A52A7C698 /* Pods_ChatGPT_Ultivic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA55FB8D10D80A7CED73A4C /* Pods_ChatGPT_Ultivic.framework */; };
+		643201852A00D1AB0034C2D3 /* Custom UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643201842A00D1AB0034C2D3 /* Custom UI.swift */; };
+		643E310829FAA4D8005E067D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643E310729FAA4D8005E067D /* AppDelegate.swift */; };
+		643E310A29FAA4D8005E067D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643E310929FAA4D8005E067D /* SceneDelegate.swift */; };
+		643E310F29FAA4D8005E067D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643E310D29FAA4D8005E067D /* Main.storyboard */; };
+		643E311129FAA4DB005E067D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643E311029FAA4DB005E067D /* Assets.xcassets */; };
+		643E311429FAA4DB005E067D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643E311229FAA4DB005E067D /* LaunchScreen.storyboard */; };
+		643E311C29FAA989005E067D /* dm-sans-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 643E311B29FAA989005E067D /* dm-sans-cufonfonts */; };
+		6456957B2A00D9CA00734153 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456957A2A00D9CA00734153 /* WelcomeVC.swift */; };
+		6456957D2A00DAF400734153 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456957C2A00DAF400734153 /* LaunchVC.swift */; };
+		6456957F2A00E54100734153 /* welComeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456957E2A00E54100734153 /* welComeCollectionViewCell.swift */; };
+		645FE6802A051D2500401F62 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FE67F2A051D2500401F62 /* Extension.swift */; };
+		64B32E612A13450A007DBE45 /* ImageGeneratCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B32E602A13450A007DBE45 /* ImageGeneratCell.swift */; };
+		64DD2AC72A0120170052CFC1 /* ChatTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2AC62A0120170052CFC1 /* ChatTextTableViewCell.swift */; };
+		64DD2AC92A0123A70052CFC1 /* ChatOutgoingTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2AC82A0123A70052CFC1 /* ChatOutgoingTextTableViewCell.swift */; };
+		64DD2ACB2A01245B0052CFC1 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2ACA2A01245B0052CFC1 /* ChatVC.swift */; };
+		64E99C542A01270F001AC06F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E99C532A01270F001AC06F /* Constant.swift */; };
+		64E99C572A012901001AC06F /* OpenAIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E99C562A012901001AC06F /* OpenAIManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		444976AE88C21EC64E463D86 /* Pods-ChatGPT Ultivic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT Ultivic.debug.xcconfig"; path = "Target Support Files/Pods-ChatGPT Ultivic/Pods-ChatGPT Ultivic.debug.xcconfig"; sourceTree = "<group>"; };
+		643201842A00D1AB0034C2D3 /* Custom UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom UI.swift"; sourceTree = "<group>"; };
+		643E310429FAA4D8005E067D /* ChatGPT Ultivic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT Ultivic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		643E310729FAA4D8005E067D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		643E310929FAA4D8005E067D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		643E310E29FAA4D8005E067D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		643E311029FAA4DB005E067D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643E311329FAA4DB005E067D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		643E311529FAA4DB005E067D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643E311B29FAA989005E067D /* dm-sans-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "dm-sans-cufonfonts"; sourceTree = "<group>"; };
+		6456957A2A00D9CA00734153 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		6456957C2A00DAF400734153 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		6456957E2A00E54100734153 /* welComeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welComeCollectionViewCell.swift; sourceTree = "<group>"; };
+		645FE67F2A051D2500401F62 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		64A57A4F2A023AEA00128D19 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		64A57A502A023AF800128D19 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		64A57A512A023AF900128D19 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		64A57A522A023AF900128D19 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		64A57A532A023AF900128D19 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		64A57A542A023AFA00128D19 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		64A57A552A023AFA00128D19 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		64A57A562A023AFA00128D19 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		64A57A572A023AFA00128D19 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		64A57A582A023AFB00128D19 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		64A57A592A023AFB00128D19 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		64A57A5A2A023AFB00128D19 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		64A57A5B2A023B0600128D19 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		64A57A5C2A023B0600128D19 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		64A57A5D2A023B0600128D19 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		64A57A5E2A023B0700128D19 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		64A57A5F2A023B0700128D19 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		64A57A602A023B0700128D19 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		64B32E602A13450A007DBE45 /* ImageGeneratCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratCell.swift; sourceTree = "<group>"; };
+		64DD2AC62A0120170052CFC1 /* ChatTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextTableViewCell.swift; sourceTree = "<group>"; };
+		64DD2AC82A0123A70052CFC1 /* ChatOutgoingTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOutgoingTextTableViewCell.swift; sourceTree = "<group>"; };
+		64DD2ACA2A01245B0052CFC1 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		64E99C532A01270F001AC06F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		64E99C562A012901001AC06F /* OpenAIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIManager.swift; sourceTree = "<group>"; };
+		A02F256ED3D341E527D595C8 /* Pods-ChatGPT Ultivic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT Ultivic.release.xcconfig"; path = "Target Support Files/Pods-ChatGPT Ultivic/Pods-ChatGPT Ultivic.release.xcconfig"; sourceTree = "<group>"; };
+		EBA55FB8D10D80A7CED73A4C /* Pods_ChatGPT_Ultivic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatGPT_Ultivic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643E310129FAA4D8005E067D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109850C5F006305A52A7C698 /* Pods_ChatGPT_Ultivic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38CB1C23F36AE1A7DD509E7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				444976AE88C21EC64E463D86 /* Pods-ChatGPT Ultivic.debug.xcconfig */,
+				A02F256ED3D341E527D595C8 /* Pods-ChatGPT Ultivic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		643201822A00D1500034C2D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				643201832A00D16D0034C2D3 /* Custom UI */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		643201832A00D16D0034C2D3 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				643201842A00D1AB0034C2D3 /* Custom UI.swift */,
+				645FE67F2A051D2500401F62 /* Extension.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		643E30FB29FAA4D8005E067D = {
+			isa = PBXGroup;
+			children = (
+				643E310629FAA4D8005E067D /* ChatGPT Ultivic */,
+				643E310529FAA4D8005E067D /* Products */,
+				38CB1C23F36AE1A7DD509E7F /* Pods */,
+				792380C784E6591E7EFFA91D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		643E310529FAA4D8005E067D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643E310429FAA4D8005E067D /* ChatGPT Ultivic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643E310629FAA4D8005E067D /* ChatGPT Ultivic */ = {
+			isa = PBXGroup;
+			children = (
+				643E310729FAA4D8005E067D /* AppDelegate.swift */,
+				643E310929FAA4D8005E067D /* SceneDelegate.swift */,
+				643E311529FAA4DB005E067D /* Info.plist */,
+				645695802A00E7D800734153 /* Sources */,
+				645695812A00E82B00734153 /* Resources */,
+			);
+			path = "ChatGPT Ultivic";
+			sourceTree = "<group>";
+		};
+		643E311D29FAA990005E067D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				64A57A4E2A023ACA00128D19 /* Raleway */,
+				64A57A4D2A023AB500128D19 /* dm-Fonts */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		643E311E29FAA9A8005E067D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64E99C522A0126F9001AC06F /* Constant */,
+				6456957C2A00DAF400734153 /* LaunchVC.swift */,
+				6456957A2A00D9CA00734153 /* WelcomeVC.swift */,
+				64DD2ACA2A01245B0052CFC1 /* ChatVC.swift */,
+				64B32E622A1360CB007DBE45 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		645695802A00E7D800734153 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				64E99C552A0128EE001AC06F /* OpenAIManager */,
+				643201822A00D1500034C2D3 /* Helper */,
+				643E311E29FAA9A8005E067D /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		645695812A00E82B00734153 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				645695822A00E85C00734153 /* Assets */,
+				643E311D29FAA990005E067D /* Fonts */,
+				645695832A00E87F00734153 /* StoryBoard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		645695822A00E85C00734153 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				643E311029FAA4DB005E067D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		645695832A00E87F00734153 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				643E310D29FAA4D8005E067D /* Main.storyboard */,
+				643E311229FAA4DB005E067D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		64A57A4D2A023AB500128D19 /* dm-Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				643E311B29FAA989005E067D /* dm-sans-cufonfonts */,
+			);
+			path = "dm-Fonts";
+			sourceTree = "<group>";
+		};
+		64A57A4E2A023ACA00128D19 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				64A57A5D2A023B0600128D19 /* Raleway-MediumItalic.ttf */,
+				64A57A5E2A023B0700128D19 /* Raleway-Regular.ttf */,
+				64A57A5F2A023B0700128D19 /* Raleway-SemiBold.ttf */,
+				64A57A5C2A023B0600128D19 /* Raleway-SemiBoldItalic.ttf */,
+				64A57A602A023B0700128D19 /* Raleway-Thin.ttf */,
+				64A57A5B2A023B0600128D19 /* Raleway-ThinItalic.ttf */,
+				64A57A502A023AF800128D19 /* Raleway-Black.ttf */,
+				64A57A552A023AFA00128D19 /* Raleway-BlackItalic.ttf */,
+				64A57A5A2A023AFB00128D19 /* Raleway-Bold.ttf */,
+				64A57A572A023AFA00128D19 /* Raleway-BoldItalic.ttf */,
+				64A57A592A023AFB00128D19 /* Raleway-ExtraBold.ttf */,
+				64A57A562A023AFA00128D19 /* Raleway-ExtraBoldItalic.ttf */,
+				64A57A532A023AF900128D19 /* Raleway-ExtraLight.ttf */,
+				64A57A512A023AF900128D19 /* Raleway-ExtraLightItalic.ttf */,
+				64A57A582A023AFB00128D19 /* Raleway-Italic.ttf */,
+				64A57A522A023AF900128D19 /* Raleway-Light.ttf */,
+				64A57A542A023AFA00128D19 /* Raleway-LightItalic.ttf */,
+				64A57A4F2A023AEA00128D19 /* Raleway-Medium.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		64B32E622A1360CB007DBE45 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6456957E2A00E54100734153 /* welComeCollectionViewCell.swift */,
+				64DD2AC62A0120170052CFC1 /* ChatTextTableViewCell.swift */,
+				64DD2AC82A0123A70052CFC1 /* ChatOutgoingTextTableViewCell.swift */,
+				64B32E602A13450A007DBE45 /* ImageGeneratCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		64E99C522A0126F9001AC06F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				64E99C532A01270F001AC06F /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		64E99C552A0128EE001AC06F /* OpenAIManager */ = {
+			isa = PBXGroup;
+			children = (
+				64E99C562A012901001AC06F /* OpenAIManager.swift */,
+			);
+			path = OpenAIManager;
+			sourceTree = "<group>";
+		};
+		792380C784E6591E7EFFA91D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBA55FB8D10D80A7CED73A4C /* Pods_ChatGPT_Ultivic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643E310329FAA4D8005E067D /* ChatGPT Ultivic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643E311829FAA4DB005E067D /* Build configuration list for PBXNativeTarget "ChatGPT Ultivic" */;
+			buildPhases = (
+				8EF82491AE6452FD4D8CFB93 /* [CP] Check Pods Manifest.lock */,
+				643E310029FAA4D8005E067D /* Sources */,
+				643E310129FAA4D8005E067D /* Frameworks */,
+				643E310229FAA4D8005E067D /* Resources */,
+				E4648C05B3121100BD1DC4E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChatGPT Ultivic";
+			packageProductDependencies = (
+			);
+			productName = "ChatGPT Ultivic";
+			productReference = 643E310429FAA4D8005E067D /* ChatGPT Ultivic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643E30FC29FAA4D8005E067D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					643E310329FAA4D8005E067D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 643E30FF29FAA4D8005E067D /* Build configuration list for PBXProject "ChatGPT Ultivic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 643E30FB29FAA4D8005E067D;
+			packageReferences = (
+			);
+			productRefGroup = 643E310529FAA4D8005E067D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				643E310329FAA4D8005E067D /* ChatGPT Ultivic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643E310229FAA4D8005E067D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643E311429FAA4DB005E067D /* LaunchScreen.storyboard in Resources */,
+				643E311129FAA4DB005E067D /* Assets.xcassets in Resources */,
+				643E310F29FAA4D8005E067D /* Main.storyboard in Resources */,
+				643E311C29FAA989005E067D /* dm-sans-cufonfonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EF82491AE6452FD4D8CFB93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatGPT Ultivic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4648C05B3121100BD1DC4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT Ultivic/Pods-ChatGPT Ultivic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT Ultivic/Pods-ChatGPT Ultivic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatGPT Ultivic/Pods-ChatGPT Ultivic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643E310029FAA4D8005E067D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DD2ACB2A01245B0052CFC1 /* ChatVC.swift in Sources */,
+				6456957B2A00D9CA00734153 /* WelcomeVC.swift in Sources */,
+				64DD2AC72A0120170052CFC1 /* ChatTextTableViewCell.swift in Sources */,
+				645FE6802A051D2500401F62 /* Extension.swift in Sources */,
+				64DD2AC92A0123A70052CFC1 /* ChatOutgoingTextTableViewCell.swift in Sources */,
+				64B32E612A13450A007DBE45 /* ImageGeneratCell.swift in Sources */,
+				643E310829FAA4D8005E067D /* AppDelegate.swift in Sources */,
+				64E99C572A012901001AC06F /* OpenAIManager.swift in Sources */,
+				643E310A29FAA4D8005E067D /* SceneDelegate.swift in Sources */,
+				6456957D2A00DAF400734153 /* LaunchVC.swift in Sources */,
+				64E99C542A01270F001AC06F /* Constant.swift in Sources */,
+				643201852A00D1AB0034C2D3 /* Custom UI.swift in Sources */,
+				6456957F2A00E54100734153 /* welComeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		643E310D29FAA4D8005E067D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643E310E29FAA4D8005E067D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		643E311229FAA4DB005E067D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643E311329FAA4DB005E067D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		643E311629FAA4DB005E067D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		643E311729FAA4DB005E067D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		643E311929FAA4DB005E067D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444976AE88C21EC64E463D86 /* Pods-ChatGPT Ultivic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB978773U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT Ultivic/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.com.ChatGPT-Ultivic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		643E311A29FAA4DB005E067D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02F256ED3D341E527D595C8 /* Pods-ChatGPT Ultivic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB978773U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT Ultivic/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.com.ChatGPT-Ultivic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643E30FF29FAA4D8005E067D /* Build configuration list for PBXProject "ChatGPT Ultivic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643E311629FAA4DB005E067D /* Debug */,
+				643E311729FAA4DB005E067D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643E311829FAA4DB005E067D /* Build configuration list for PBXNativeTarget "ChatGPT Ultivic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643E311929FAA4DB005E067D /* Debug */,
+				643E311A29FAA4DB005E067D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 643E30FC29FAA4D8005E067D /* Project object */;
+}

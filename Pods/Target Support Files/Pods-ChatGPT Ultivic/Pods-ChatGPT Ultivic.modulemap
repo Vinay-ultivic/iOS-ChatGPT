@@ -1,0 +1,6 @@
+framework module Pods_ChatGPT_Ultivic {
+  umbrella header "Pods-ChatGPT Ultivic-umbrella.h"
+
+  export *
+  module * { export * }
+}
